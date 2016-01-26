@@ -4,6 +4,7 @@
 ## 文件操作类
 ```php
 use Library\File;
+
 $rs =  File::getExt('./sa/123.txt');
 print_r($rs);
 ```
