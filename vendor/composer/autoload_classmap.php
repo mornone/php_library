@@ -11,6 +11,6 @@ return array(
     'Library\\Crypt\\Crypt' => $baseDir . '/library/Crypt/Crypt.class.php',
     'Library\\Crypt\\Des' => $baseDir . '/library/Crypt/Des.class.php',
     'Library\\Crypt\\Think' => $baseDir . '/library/Crypt/Think.class.php',
-    'Library\\Crypt\\Xxtea' => $baseDir . '/library/Crypt/Xxtea.class.php',
     'Library\\File' => $baseDir . '/library/File.class.php',
+    'Library\\Validate' => $baseDir . '/library/Validate.class.php',
 );

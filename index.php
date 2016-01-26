@@ -17,3 +17,8 @@ require_once __DIR__ . '/vendor/autoload.php';
  * echo '<br />';
  * echo Crypt::decrypt('sXhy24WnpbCFqnGnr3Z1rbKzfal9sHZ1');
  */
+
+
+use Library\Validate;
+
+echo Validate::isInteger('123123');

@@ -8,13 +8,57 @@ namespace Library;
 
 class Validate{
 
-    public static function isEmpty($string){}
+    /**
+     * 校验字符串是否为空
+     * @param  string  $string 带校验字符串
+     * @return boolean         
+     */
+    public static function isEmpty($string){
+        if(!isset($string))
+            return true;
+        if($string === null )
+            return true;
+        if(trim($string) === "")
+            return true;
+        
+        return false;
+    }
 
-    public static function isNumeric($string){}
+    /**
+     * 校验字符串是否为数字
+     * @param  number  $string 数字
+     * @return boolean         
+     */
+    public static function isNumeric($string){
+        if (!is_numeric($string)) 
+            return false;
 
-    public static function isString($string){}
+        return true;
+    }
 
-    public static function isInteger($string){}
+    /**
+     * 校验是否为字符串
+     * @param  string  $string 待校验字符
+     * @return boolean         
+     */
+    public static function isString($string){
+        if (!is_string($string)) 
+            return false;
+
+        return true;
+    }
+
+    /**
+     * 校验是否为int类型
+     * @param  integer  $string 待校验字符
+     * @return boolean         
+     */
+    public static function isInteger($string){
+        if (!is_integer($string)) 
+            return false;
+
+        return true;
+    }
 
     public static function isEmail($string){}
 
