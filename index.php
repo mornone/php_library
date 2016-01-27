@@ -5,7 +5,14 @@ require_once __DIR__ . '/vendor/autoload.php';
 /**
  * 文件操作类
  * use Library\File;
+ *
+ * $rs =  File::read('./sa/123.txt');
+ * $rs =  File::put('./sa/123.txt', '1111');
+ * $rs =  File::append('./sa/123.txt', '222');
+ * $rs =  File::getName('./sa/123.txt');
  * $rs =  File::getExt('./sa/123.txt');
+ * $rs =  File::getPath('./sa/123.txt');
+ * $rs =  File::has('./sa/123.txt');
  * print_r($rs);
  */
 
