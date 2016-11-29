@@ -36,3 +36,28 @@ $(function(){
         } 
     }); 
 }); 
+
+//移动浏览器判断
+function browse_is_mobile () {
+    $user_agent = $_SERVER['HTTP_USER_AGENT'];
+    if(preg_match("/iPhone/i", $user_agent) || preg_match("/iPod/i", $user_agent) ||  preg_match("/Android/i", $user_agent)){
+        return true;
+    }
+    else {
+        return false;
+    }
+}
+
+//检测浏览器类型
+function check_mobile_browse () {
+    $user_agent = $_SERVER['HTTP_USER_AGENT'];
+    if(preg_match("/iPhone/i", $user_agent) || preg_match("/iPod/i", $user_agent)){
+        return 1;
+    }
+    elseif (preg_match("/Android/i", $user_agent)) {
+        return 2;
+    }
+    else {
+        return false;
+    }
+}
